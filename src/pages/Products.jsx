@@ -13,7 +13,7 @@ class Products extends React.Component {
 
   }
   componentDidMount() {
-      axios.get("http://ec2-18-208-182-18.compute-1.amazonaws.com:3001/Products").then((res) => {
+      axios.get("http://ec2-18-208-182-18.compute-1.amazonaws.com:3001/Products1").then((res) => {
         const Products = res.data;
         this.setState({products: Products });
       });
