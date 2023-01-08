@@ -1,0 +1,15 @@
+/* .carousel {
+  display: flex;
+  width: 800px;
+  background-color: black;
+  justify-content: center; 
+} */
+
+@media screen and (max-width: 450px) {
+}
+
+@media screen and (max-width: 880px) {
+  .carousel {
+    width: 100px;
+  }
+}

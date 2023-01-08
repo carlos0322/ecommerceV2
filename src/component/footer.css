@@ -1,0 +1,163 @@
+.fa {
+  padding: 20px;
+  font-size: 20px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px 5px;
+}
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.footer-container {
+  padding: 20px;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.footer-container:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+.footer-container:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+.footer-container {
+  margin-top: 50px;
+  padding-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgb(17, 108, 199);
+  height: 213px;
+}
+.container-middle {
+  border: 2px black;
+}
+
+.li-one {
+  font-size: 20px;
+  border-right: solid white 2px;
+  padding-right: 15px;
+  font-weight: bold;
+}
+
+.li-two {
+  font-size: 20px;
+  border-right: solid white 2px;
+  padding-right: 15px;
+}
+.li-three {
+  font-size: 20px;
+  border-right: solid white 2px;
+  padding-right: 15px;
+}
+
+li {
+  font-size: 15px;
+  color: white;
+}
+
+@media screen and (max-width: 900px) {
+  .footer-container {
+    margin-top: 50px;
+    height: 525px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer-container {
+    font-size: 13px;
+  }
+  li {
+    font-size: 10px;
+  }
+  .li-one {
+    font-size: 10px;
+    margin-left: 1px;
+    border-right: solid 2px white;
+  }
+  .li-two {
+    font-size: 10px;
+    margin-left: 9px;
+    border-right: solid 2px white;
+  }
+  .li-three {
+    font-size: 10px;
+    margin-left: 5px;
+    border-right: solid 2px white;
+  }
+
+  .fa {
+    margin-left: 0px;
+    width: 45px;
+    height: 50px;
+    display: flex;
+  }
+
+  .icons {
+    margin-right: 70px;
+  }
+}
