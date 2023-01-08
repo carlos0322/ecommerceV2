@@ -40,7 +40,7 @@ app.use(cors());
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get("/Products1", (req, res) => {
+app.get("/Products", (req, res) => {
   const sql = "SELECT * FROM products";
   pool.query(sql, (err, results) => {
     res.send(results);
